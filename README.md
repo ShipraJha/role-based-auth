@@ -27,5 +27,5 @@ This is a Role-Based Access Control (RBAC) system implemented in a Ruby on Rails
 * rails db:seed
 
 ### Start the Rails server:
-*rails server
-Open your web browser and navigate to http://localhost:3000 to access the application.
+* rails server
+* Open your web browser and navigate to http://localhost:3000 to access the application.
