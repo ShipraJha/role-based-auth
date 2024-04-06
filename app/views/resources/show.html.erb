@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 class="mt-5 mb-4"><%= @resource.name %></h1>
+
+      <%= link_to 'Edit', edit_resource_path(@resource), class: 'btn btn-primary mr-2' if @current_user.has_access?('WRITE') %>
+      <%= link_to 'Delete', @resource, method: :delete, data: { confirm: 'Are you sure you want to delete this resource?' }, class: 'btn btn-danger mr-2' if @current_user.has_access?('DELETE') %>
+      <%= link_to 'Back', resources_path, class: 'btn btn-secondary' %>
+    </div>
+  </div>
+</div>

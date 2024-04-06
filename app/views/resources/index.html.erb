@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <h1 class="mt-5 mb-4">Resources</h1>
+      <div class="mt-3">
+        <%= link_to 'New Resource', new_resource_path, class: 'btn btn-primary' if @current_user.has_access?('WRITE') %>
+      </div>
+      <ul class="list-group mt-3">
+        <% @resources.each do |resource| %>
+          <li class="list-group-item">
+            <%= link_to resource.name, resource %>
+          </li>
+        <% end %>
+      </ul>
+
+    </div>
+  </div>
+</div>
