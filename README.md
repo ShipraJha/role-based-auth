@@ -9,7 +9,7 @@ This is a Role-Based Access Control (RBAC) system implemented in a Ruby on Rails
 ## Setup
 ## Prerequisites
 * Ruby (version 3.0.6 recommended)
-R* ails (version 7 recommended)
+* Rails (version 7 recommended)
 
 ## Installation
 ### Clone this repository to your local machine:
